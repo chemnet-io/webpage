@@ -15,6 +15,22 @@
 
 /* Aboutpage edits */
 
+/* Contactpage edits */
+#conttab {
+  margin: 10%;
+}
+
+td, th {
+  padding: 5px;
+}
+
+tr:nth-child(even) {background: #f4f4f4}
+
+.foot {
+  position: fixed;
+  bottom: 0;
+  width:100%;
+}
 
 /* Teampage edits */
 
@@ -47,9 +63,11 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
+  margin:0;
 }
 
 a {
