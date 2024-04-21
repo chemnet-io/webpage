@@ -6,6 +6,11 @@
 * License: https://bootstrapmade.com/license/
 */
 
+/* Footer edits*/
+#chem {
+  font-weight: bolder;
+  color: #005c98ff;
+}
 
 /* Chemnet edits */
 #chemlogo {
@@ -643,7 +648,7 @@ section {
   font-weight: 600;
   padding: 0;
   margin: 20px 0;
-  color: #434175;
+  color: #000000;
 }
 
 .why-us .box p {
@@ -756,7 +761,7 @@ section {
 }
 
 .services .icon-box h4 a {
-  color: #434175;
+  color: #000000;
   transition: ease-in-out 0.3s;
 }
 
@@ -961,12 +966,12 @@ section {
 
 .portfolio .portfolio-wrap .portfolio-info h4 {
   font-size: 20px;
-  color: #434175;
+  color: #000000;
   font-weight: 600;
 }
 
 .portfolio .portfolio-wrap .portfolio-info p {
-  color: #434175;
+  color: #000000;
   font-size: 14px;
   text-transform: uppercase;
   padding: 0;
@@ -1557,13 +1562,13 @@ section {
 #footer .footer-top h4 {
   font-size: 16px;
   font-weight: bold;
-  color: #434175;
+  color: #005c98ff;
   position: relative;
   padding-bottom: 12px;
 }
 
 #footer .footer-top .footer-links {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 #footer .footer-top .footer-links ul {
