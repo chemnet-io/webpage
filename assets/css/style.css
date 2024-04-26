@@ -555,6 +555,7 @@ section {
 }
 
 .section-title {
+  margin-top: 3vh;
   text-align: center;
   padding-bottom: 30px;
 }
