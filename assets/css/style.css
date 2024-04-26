@@ -29,6 +29,10 @@ td, th {
   padding: 10px;
 }
 
+#sendbutton {
+  margin-top: 5%;
+}
+
 tr:nth-child(even) {background: #f4f4f4}
 
 .foot {

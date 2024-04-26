@@ -216,8 +216,5 @@
    */
   new PureCounter();
 
-  document.getElementById("send").addEventListener("click", function() {
-    document.getElementById("sent-message").style.display = "block";
-  });
 
 })()
