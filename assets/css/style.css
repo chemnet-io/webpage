@@ -12,6 +12,11 @@
   color: #005c98ff;
 }
 
+#scientist {
+  display: block;
+  width:30%;
+}
+
 /* Chemnet edits */
 #chemlogo {
   margin: 15%;
@@ -19,6 +24,12 @@
 }
 
 /* Aboutpage edits */
+
+#lupe {
+  width: 100%;
+  height: auto;
+  padding-bottom: 5%;
+}
 
 /* Contactpage edits */
 #conttab {
@@ -68,6 +79,8 @@ tr:nth-child(even) {background: #f4f4f4}
 #support {
   width: fit-content;
 }
+
+
 
 /*--------------------------------------------------------------
 # General
@@ -1574,6 +1587,7 @@ section {
 
 #footer .footer-top .footer-links {
   margin-bottom: 20px;
+  padding-left: 5%;
 }
 
 #footer .footer-top .footer-links ul {
@@ -1592,7 +1606,6 @@ section {
 #footer .footer-top .footer-links ul li {
   padding: 10px 0;
   display: flex;
-  align-items: center;
 }
 
 #footer .footer-top .footer-links ul li:first-child {
