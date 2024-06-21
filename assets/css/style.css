@@ -115,13 +115,14 @@ h3::after {
 
 .cite {
   display: none;
-  text-align: center;
 }
 
-#but1 #but2 #but3 #but4 #but5 #but6 {
-  margin-left: auto;
-  margin-right: auto;
-} 
+.panel {
+  margin: 20px;
+  margin-bottom: 10vh;
+  margin-top: 2vh
+  
+}
 
 
 
