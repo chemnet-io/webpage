@@ -90,6 +90,40 @@ tr:nth-child(even) {background: #f4f4f4}
   width: fit-content;
 }
 
+/*Publications Page edits*/
+h3 {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #434175;
+  text-align: center;
+}
+
+h3::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #5a5af3;
+    bottom: 0;
+    left: calc(50% - 25px);
+  }
+
+.cite {
+  display: none;
+  text-align: center;
+}
+
+#but1 #but2 #but3 #but4 #but5 #but6 {
+  margin-left: auto;
+  margin-right: auto;
+} 
+
+
 
 
 /*--------------------------------------------------------------
