@@ -159,6 +159,9 @@
     }
   });
 
+
+
+
   /**
    * Porfolio isotope and filter
    */
@@ -187,34 +190,18 @@
 
   });
 
-  /**
-   * Initiate portfolio lightbox 
-   */
-  const portfolioLightbox = GLightbox({
-    selector: '.portfolio-lightbox'
-  });
-
-  /**
-   * Portfolio details slider
-   */
-  new Swiper('.portfolio-details-slider', {
-    speed: 400,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    }
-  });
-
-  /**
-   * Initiate Pure Counter 
-   */
-  new PureCounter();
-
 
 })()
+
+function toggleCite(id, but) {
+  const cite = document.getElementById(id);
+  const button = document.getElementById(but);
+  if (cite.style.display === "none") {
+      cite.style.display = "block";
+      button.textContent = "Hide Citation";
+  }
+  else {
+      cite.style.display = "none";
+      button.textContent = "Show Citation";
+  }    
+}
