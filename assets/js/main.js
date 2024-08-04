@@ -211,5 +211,15 @@ function toggleCite(id, but) {
   else {
       cite.style.display = "block";
       button.textContent = "Hide Citation";
-  }    
+  } 
+}  
+  
+function filterYear(year) {
+  const p = document.querySelectorAll('.cite');
+  p.forEach(element => {
+    const pText = element.textContent || element.innerText;
+  if (pText.includes("year={"+ year +"}")) {
+    console.log("funktioniert, yeah!");
+  }
+  })
 }
