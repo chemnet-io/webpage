@@ -193,8 +193,8 @@
 
 })()
 
-function toggleYear() {
-  const dropdown = document.getElementById('year');
+function toggle(type) {
+  const dropdown = document.getElementById(type);
      if (dropdown.style.display === "block")
       dropdown.style.display = "none";
     else 
@@ -228,5 +228,25 @@ function resetYear() {
   p.forEach(element => {
     element.parentNode.parentNode.style.display = "block";
 })
+}
+
+function searchForSthn(event, sthn) {
+  event.preventDefault();
+  const p = document.querySelectorAll('.cite');
+  const head = document.querySelectorAll('h4');
+  let input = document.getElementById("keywordSearch").value; 
+  input = sthn;
+
+  p.forEach(element => {
+    const text = element.textContent || element.innerText;
+    if (!text.includes(input))
+      element.parentNode.parentNode.style.display = "none";
+  })
+
+  head.forEach(element => {
+    const text = element.textContent || element.innerText; 
+    if (!text.includes(input))
+      element.parentNode.parentNode.style.display = "none";
+  }) 
 }
 
