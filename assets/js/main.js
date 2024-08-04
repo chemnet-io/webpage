@@ -221,5 +221,12 @@ function filterYear(year) {
   if (!pText.includes("year={"+ year +"}")) 
     element.parentNode.parentNode.style.display = "none";
   })
-  
 }
+  
+function resetYear() {
+  const p = document.querySelectorAll('.cite');
+  p.forEach(element => {
+    element.parentNode.parentNode.style.display = "block";
+})
+}
+
