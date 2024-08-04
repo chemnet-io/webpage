@@ -193,6 +193,14 @@
 
 })()
 
+function toggleYear() {
+  const dropdown = document.getElementById('year');
+    if (dropdown.style.display === "none") {
+      dropdown.style.display = "block";
+    } else 
+      dropdown.style.display = "none";
+}
+
 function toggleCite(id, but) {
   const cite = document.getElementById(id);
   const button = document.getElementById(but);

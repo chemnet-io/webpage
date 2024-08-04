@@ -9,9 +9,12 @@
     <meta content="" name="description">
     <meta content="" name="keywords">
 
+    
+
     <!-- Favicons -->
     <link href="assets\img\chem\Logo ohne schrift.png" rel="icon">
     <link href="assets\img\chem\Logo ohne schrift.png" rel="apple-touch-icon">
+    
 
     <!-- Google Fonts -->
     <link
@@ -37,6 +40,7 @@
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
     <script src="assets/js/main.js"></script>
+    
 
 </head>
 
@@ -93,8 +97,16 @@
                 <div class="row">
                     <div class="col-md-10">
                         <h3>PUBLICATIONS</h3>
-    
-    
+                        
+                        <div>
+                            <button class="dropdown" onclick="toggleYear()"> year of publication</button>
+                            <div class="dropdown-content" id="year">
+                                <ul>
+                                <li>2023</li>
+                                </ul>
+                            </div>
+                        </div>
+
                         <div class="panel panel-default">
                             <div class="panel-heading">
                                 <h4 class="panel-title">Development of a novel chemoinformatic tool for natural product
@@ -459,6 +471,8 @@
     <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
     <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <!-- <script src="assets/vendor/php-email-form/validate.js"></script> -->
 
     <!-- Template Main JS File -->
