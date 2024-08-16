@@ -230,23 +230,22 @@ function resetYear() {
 })
 }
 
-function searchForSthn(event, sthn) {
+function searchForSthn(event) {
   event.preventDefault();
-  const p = document.querySelectorAll('.cite');
-  const head = document.querySelectorAll('h4');
-  let input = document.getElementById("keywordSearch").value; 
-  input = sthn;
+  const input = document.getElementById("keywordSearch").value.trim().toLowerCase();
 
-  p.forEach(element => {
-    const text = element.textContent || element.innerText;
-    if (!text.includes(input))
-      element.parentNode.parentNode.style.display = "none";
-  })
+  const panels = document.querySelectorAll('.panel');
 
-  head.forEach(element => {
-    const text = element.textContent || element.innerText; 
-    if (!text.includes(input))
-      element.parentNode.parentNode.style.display = "none";
-  }) 
+  panels.forEach(panel => {
+      const title = panel.querySelector('.panel-title').textContent.toLowerCase();
+      const content = panel.querySelector('.panel-body').textContent.toLowerCase();
+      const citation = panel.querySelector('.cite').textContent.toLowerCase();
+
+      if (title.includes(input) || content.includes(input) || citation.includes(input)) {
+          panel.style.display = "";
+      } else {
+          panel.style.display = "none";
+      }
+  });
 }
 
