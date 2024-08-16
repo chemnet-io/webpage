@@ -248,3 +248,7 @@ function searchForSthn(event) {
       }
   });
 }
+
+function hideDropdown(menu) {
+  document.getElementById(menu).style.display = "none";
+}

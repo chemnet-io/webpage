@@ -102,8 +102,8 @@
                         <div class="d-flex flex-row">
                             <div class="p-2">
                                 <button class="dropdown" onclick="toggle('year')"> year of publication</button>
-                                <div class="dropdown-content" id="year">
-                                    <ul>
+                                <div class="dropdown-content" id="year"  onmouseleave="hideDropdown('year')">
+                                    <ul id="drop">
                                     <li onclick="filterYear(2023)">2023</li>
                                     <li onclick="resetYear()">show all</li>
                                     </ul>
@@ -112,10 +112,13 @@
 
                             <div class="p-2">
                                 <button class="dropdown" onclick="toggle('type')"> publication type</button>
-                                <div class="dropdown-content" id="type">
+                                <div class="dropdown-content" id="type"  onmouseleave="hideDropdown('type')">
                                     <ul>
                                     <li>conference</li>
+                                    <li>workshop</li>
+                                    <li>book chapter</li>
                                     <li>other </li>
+                                    <li>show all</li>
                                     </ul>
                                 </div>
                             </div>
