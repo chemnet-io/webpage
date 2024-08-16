@@ -248,4 +248,3 @@ function searchForSthn(event) {
       }
   });
 }
-

@@ -101,7 +101,7 @@
                         
                         <div class="d-flex flex-row">
                             <div class="p-2">
-                                <button class="dropdown" onmouseover="toggle('year')"> year of publication</button>
+                                <button class="dropdown" onclick="toggle('year')"> year of publication</button>
                                 <div class="dropdown-content" id="year">
                                     <ul>
                                     <li onclick="filterYear(2023)">2023</li>
@@ -111,7 +111,7 @@
                             </div>
 
                             <div class="p-2">
-                                <button class="dropdown" onmouseover="toggle('type')"> publication type</button>
+                                <button class="dropdown" onclick="toggle('type')"> publication type</button>
                                 <div class="dropdown-content" id="type">
                                     <ul>
                                     <li>conference</li>
@@ -119,9 +119,10 @@
                                     </ul>
                                 </div>
                             </div>
-                            <form class="p-2">
-                                <input id="keywordSearch" type="text" placeholder="look for keywords" oninput="searchForSthn(event)">
-                            </form>
+                                <form class="p-2">
+                                    <input id="keywordSearch" type="text" placeholder="look for keywords" oninput="searchForSthn(event)">
+                                </form>
+
                             
                         </div>
 
