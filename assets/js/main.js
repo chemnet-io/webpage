@@ -218,7 +218,7 @@ function filterYear(year) {
   const p = document.querySelectorAll('.cite');
 
   let value = document.getElementById('dropYear');
-  value.textContent = year;
+  value.textContent = "active filter: " + year;
 
   p.forEach(element => {
     element.parentNode.parentNode.style.display = "block";
