@@ -104,13 +104,14 @@
                                 <button class="dropdown" onclick="toggle('year')"> year of publication</button>
                                 <div class="dropdown-content" id="year"  onmouseleave="hideDropdown('year')">
                                     <ul id="drop">
-                                    <li onclick="filterYear(2023)">2023</li>
-                                    <li onclick="resetYear()">show all</li>
+                                        <li onclick="filterYear(2024)">2024</li>
+                                        <li onclick="filterYear(2023)">2023</li>
+                                        <li onclick="resetYear()">show all</li>
                                     </ul>
                                 </div>
                             </div>
 
-                            <div class="p-2">
+                            <!-- <div class="p-2">
                                 <button class="dropdown" onclick="toggle('type')"> publication type</button>
                                 <div class="dropdown-content" id="type"  onmouseleave="hideDropdown('type')">
                                     <ul>
@@ -121,7 +122,8 @@
                                     <li>show all</li>
                                     </ul>
                                 </div>
-                            </div>
+                            </div> -->
+
                                 <form class="p-2">
                                     <input id="keywordSearch" type="text" placeholder="look for keywords" oninput="searchForSthn(event)">
                                 </form>
@@ -129,7 +131,35 @@
                             
                         </div>
 
-                        
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">Neglected Tropical Diseases: A Chemoinformatics Approach for the Use of Biodiversity in Anti-Trypanosomatid Drug Discovery</h4>
+                            </div>
+                            <div class="panel-body">
+                                <p>
+                                    The development of new treatments for neglected tropical diseases (NTDs) remains a major challenge in the 21st century. In most cases, the available drugs are obsolete and have limitations in terms of efficacy and safety. The situation becomes even more complex when considering the low number of new chemical entities (NCEs) currently in use in advanced clinical trials for most of these diseases. Natural products (NPs) are valuable sources of hits and lead compounds with privileged scaffolds for the discovery of new bioactive molecules. Considering the relevance of biodiversity for drug discovery, a chemoinformatics analysis was conducted on a compound dataset of NPs with anti-trypanosomatid activity reported in 497 research articles from 2019 to 2024. Structures corresponding to different metabolic classes were identified, including terpenoids, benzoic acids, benzenoids, steroids, alkaloids, phenylpropanoids, peptides, flavonoids, polyketides, lignans, cytochalasins, and naphthoquinones. This unique collection of NPs occupies regions of the chemical space with drug-like properties that are relevant to anti-trypanosomatid drug discovery. The gathered information greatly enhanced our understanding of biologically relevant chemical classes, structural features, and physicochemical properties. These results can be useful in guiding future medicinal chemistry efforts for the development of NP-inspired NCEs to treat NTDs caused by trypanosomatid parasites.
+                                </p>
+                                <p>
+                                    Valli, Marilia and Döring, Thiago H. and Marx, Edgard and Ferreira, Leonardo L. G. and Medina-Franco, José L. and Andricopulo, Adriano D.
+                                </p>
+                                <button type="button" id="but1" class="btn btn-outline-secondary"
+                                    onclick="toggleCite('cite1', 'but1')">Show Citation</button>
+    
+                   
+                                <p id="cite1" class="cite">
+                                    @Article{biom14081033,
+                                        author={Valli, Marilia and Döring, Thiago H. and Marx, Edgard and Ferreira, Leonardo L. G. and Medina-Franco, José L. and Andricopulo, Adriano D.},
+                                        title={Neglected Tropical Diseases: A Chemoinformatics Approach for the Use of Biodiversity in Anti-Trypanosomatid Drug Discovery},
+                                        journal={Biomolecules},
+                                        volume={14},
+                                        year={2024},
+                                        number={8},
+                                        article-number={1033},
+                                        URL={https://www.mdpi.com/2218-273X/14/8/1033},
+                                        ISSN={2218-273X}}
+                                </p>
+                            </div>
+                        </div>
 
                         <div class="panel panel-default">
                             <div class="panel-heading">
@@ -217,6 +247,8 @@
                                 </p>
                             </div>
                         </div>
+
+                        
               
                         <div class="panel panel-default">
                             <div class="panel-heading">

@@ -215,9 +215,12 @@ function toggleCite(id, but) {
 }  
   
 function filterYear(year) {
+
   const p = document.querySelectorAll('.cite');
   p.forEach(element => {
+    element.parentNode.parentNode.style.display = "block";
     const pText = element.textContent || element.innerText;
+   
   if (!pText.includes("year={"+ year +"}")) 
     element.parentNode.parentNode.style.display = "none";
   })
