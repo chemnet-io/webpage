@@ -145,7 +145,7 @@ h3::after {
   font-weight: 550;
 }
 
-li:hover {
+#li:hover {
   background-color: #d6d6d6;
 }
 
