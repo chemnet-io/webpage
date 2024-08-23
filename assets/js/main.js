@@ -215,8 +215,11 @@ function toggleCite(id, but) {
 }  
   
 function filterYear(year) {
-
   const p = document.querySelectorAll('.cite');
+
+  let value = document.getElementById('dropYear');
+  value.textContent = year;
+
   p.forEach(element => {
     element.parentNode.parentNode.style.display = "block";
     const pText = element.textContent || element.innerText;
@@ -227,6 +230,9 @@ function filterYear(year) {
 }
   
 function resetYear() {
+  let value = document.getElementById('dropYear');
+  value.textContent = "year of publication";
+
   const p = document.querySelectorAll('.cite');
   p.forEach(element => {
     element.parentNode.parentNode.style.display = "block";
